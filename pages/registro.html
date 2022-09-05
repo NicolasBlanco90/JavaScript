@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="registro,registrate,ingresar,login,usuario">
+    <meta name="description" content="Japanik. Registrate y llevá el control de tus pedidos">
+    <link rel="shortcut icon" href="../images/logo-removebg-preview.png" type="image/png">
+    <script src="https://kit.fontawesome.com/c5edc8b305.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>• JAPANIK • Formulario de Registro</title>
+</head>
+
+<body>
+    <!--NAV-->
+    <div>
+        <nav class="navbar bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logo-removebg-preview.png" alt="logo">
+                </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        <a class="nav-link" href="../pages/registro.html">Registro</a>
+                        <a class="nav-link" href="../pages/carrito.html">Carrito</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/ayuda.html">Ayuda</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--FIN NAV-->
+    <!--CONTENIDO PRINCIPAL--> 
+    <section class="container fondo-categorias">
+        <h1 class="centrar fondo-h1">&#128221REGISTRO&#128221</h1>
+        <h2>Crear cuenta</h2>
+        <h4>Comprá más rápido y llevá el control de tus pedidos, ¡en un solo lugar!</h4>
+        <form class="row g-3" style="margin-bottom: 10px;" id="formulario">
+            <div class="col-md-4">
+                <label for="validationDefault01" class="form-label">Nombre</label>
+                <input type="text" class="form-control" id="validationDefault01" value="Cosme" required>
+                <label for="exampleFormControlInput1" class="form-label">Correo Electronico</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1"
+                    placeholder="cosmefulanito@ejemplo.com">
+                <label for="exampleFormControlInput1" class="form-label">Contraseña</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1"
+                    placeholder="Contraseña">   
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefault02" class="form-label">Apellido</label>
+                <input type="text" class="form-control" id="validationDefault02" value="Fulanito" required>
+                <label for="exampleFormControlInput1" class="form-label">Confirmar Correo</label>
+                <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="Confirmar correo">
+                <label for="exampleFormControlInput1" class="form-label">Confirmar Contraseña</label>
+                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Confirmar Contraseña">
+            </div>
+            <div class="col-md-4">
+                <label for="validationDefaultUsername" class="form-label">Usuario</label>
+                <div class="input-group">
+                    <span class="input-group-text" id="inputGroupPrepend2">@</span>
+                    <input type="text" class="form-control" id="validationDefaultUsername"
+                        aria-describedby="inputGroupPrepend2" required>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault03" class="form-label">Direccion</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault03" class="form-label">Provincia</label>
+                <input type="text" class="form-control" id="validationDefault03" required>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault04" class="form-label">Ciudad</label>
+                <select class="form-select" id="validationDefault04" required>
+                    <option selected disabled value="">Elegir...</option>
+                    <option>...</option>
+                </select>
+            </div>
+            <div class="col-md-3">
+                <label for="validationDefault05" class="form-label">Código postal</label>
+                <input type="text" class="form-control" id="validationDefault05" required>
+            </div>
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="invalidCheck2" required>
+                    <label class="form-check-label" for="invalidCheck2">
+                        Deseo recibir novedades
+                    </label>
+                </div>
+            </div>
+            <div class="col-12">
+                <button class="btn btn-animado" type="submit">Registrarme!</button>
+            </div>
+        </form>
+
+    </section>
+    <!--FIN CONTENIDO PRINCIPAL--> 
+    <!--FOOTER-->
+    <footer class="bg-dark text-center text-white footer" style="padding-top: 10px;">
+        <section class="mb-4">
+            <a class="navbar-brand" href="../index.html">
+                <img class="circulo" src="../images/logo-removebg-preview.png" alt="logo">
+            </a>
+            <p>
+                Japanik-Argentina. Todos los derechos reservados.
+            </p>
+            <ul class="list-group">
+                <li><a class="btn-footer btn-animado-footer" href="./nosotros.html">Sobre nosotros</a></li>
+                <li><a class="btn-footer btn-animado-footer" href="https://www.instagram.com/"><i
+                            class="fa-brands fa-instagram"></i></a></i></li>
+                <li><a class="btn-footer btn-animado-footer" href="https://twitter.com/?lang=es"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li><a class="btn-footer btn-animado-footer" href="https://web.whatsapp.com/"><i
+                            class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </section>
+        <div class="text-center p-3" style="background-color: #00000033;">
+            © Carlos Nicolas Blanco 2022 Copyright:
+            <a class="text-white btn-footer btn-animado-footer"
+                href="https://www.coderhouse.com/?utm_term=%2Bcoder%20%2Bhouse&utm_campaign=0&utm_source=google_search_brand&utm_medium=cpc&gclid=Cj0KCQjwwJuVBhCAARIsAOPwGASin844gyFXghz4wY-2hEzrMLt9dui5SOzQg47_3SWMprctgNVizI8aAumhEALw_wcB">Coderhouse.com</a>
+        </div>
+    </footer>
+    <!--FIN FOOTER-->
+    <script src="/Javascript/registro.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>

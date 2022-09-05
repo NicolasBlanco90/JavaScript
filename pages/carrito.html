@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="compra,carrito,productos,envio,finalizar">
+    <meta name="description" content="Japanik. Revisa los productos de tu carrito y finaliza la compra">
+    <link rel="shortcut icon" href="../images/logo-removebg-preview.png" type="image/png">
+    <script src="https://kit.fontawesome.com/c5edc8b305.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>• JAPANIK • Carrito</title>
+</head>
+
+<body>
+    <!--NAV-->
+    <div>
+        <nav class="navbar bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="../index.html">
+                    <img src="../images/logo-removebg-preview.png" alt="logo">
+                </a>
+            </div>
+        </nav>
+        <nav class="navbar navbar-expand-lg bg-light">
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link" href="../index.html">Inicio</a>
+                        <a class="nav-link" href="../pages/productos.html">Productos</a>
+                        <a class="nav-link" href="../pages/registro.html">Registro</a>
+                        <a class="nav-link" href="../pages/carrito.html">Carrito</a>
+                        <a class="nav-link" href="../pages/contacto.html">Contacto</a>
+                        <a class="nav-link" href="../pages/ayuda.html">Ayuda</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </div>
+    <!--FIN NAV-->
+    <!--CONTENIDO PRINCIPAL-->
+    <div class="container" style="padding: 5px;">
+        <h1 class="centrar fondo-h1">&#128091CARRITO COMPRAS&#128091</h1>
+        <div class="row">
+            <div class="fondo-categorias col-lg-10 col-md-8 col-sm-8 col-xs-6">
+                <span id="carrito" style="display: flex ;"></span>
+
+                <span id="precioTotal"></span>
+                <button id="finalizar" class="btn-1 btn-comprar"> finalizar</button>
+            </div>
+        </div>
+    </div>
+    <div class="container" style="margin-bottom: 10px;">
+        <section class="row">
+            <h6 class="centrar" style="margin-left:0;">&#129327NOVEDADES&#129327</h6>
+            <div class="row">
+                <a class="col" href="./pages/productos.html"><img class="opacidad img-fluid"
+                        src="https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/themes/amazonas/1-img-1052225988-1656768592-bf2bfc6dbaf50655c06fa9554f2279901656768592-480-0.webp?582266436"
+                        alt=""></a>
+                <a class="col" href="./pages/productos.html"><img class="opacidad img-fluid"
+                        src="https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/themes/amazonas/1-img-471766782-1656768685-c415b924375b30d242c63c826608a48f1656768686-480-0.webp?582266436"
+                        alt=""></a>
+                <a class="col" href="./pages/productos.html"><img class="opacidad img-fluid"
+                        src="https://d3ugyf2ht6aenh.cloudfront.net/stores/186/318/themes/amazonas/1-img-1273452349-1656768687-84e9d9ed765de07e0ac5f854de26a6261656768687-480-0.webp?582266436"
+                        alt=""></a>
+            </div>
+        </section>
+    </div>
+    <!--FIN CONTENIDO PRINCIPAL-->
+    <!--FOOTER-->
+    <footer class="bg-dark text-center text-white footer" style="padding-top: 10px;">
+        <section class="mb-4">
+            <a class="navbar-brand" href="../index.html">
+                <img class="circulo" src="../images/logo-removebg-preview.png" alt="logo">
+            </a>
+            <p>
+                Japanik-Argentina. Todos los derechos reservados.
+            </p>
+            <ul class="list-group">
+                <li><a class="btn-footer btn-animado-footer" href="./nosotros.html">Sobre nosotros</a></li>
+                <li><a class="btn-footer btn-animado-footer" href="https://www.instagram.com/"><i
+                            class="fa-brands fa-instagram"></i></a></i></li>
+                <li><a class="btn-footer btn-animado-footer" href="https://twitter.com/?lang=es"><i
+                            class="fa-brands fa-twitter"></i></a></li>
+                <li><a class="btn-footer btn-animado-footer" href="https://web.whatsapp.com/"><i
+                            class="fa-brands fa-whatsapp"></i></a></li>
+            </ul>
+        </section>
+        <div class="text-center p-3" style="padding-top: 10px;">
+            © Carlos Nicolas Blanco 2022 Copyright:
+            <a class="text-white btn-footer btn-animado-footer"
+                href="https://www.coderhouse.com/?utm_term=%2Bcoder%20%2Bhouse&utm_campaign=0&utm_source=google_search_brand&utm_medium=cpc&gclid=Cj0KCQjwwJuVBhCAARIsAOPwGASin844gyFXghz4wY-2hEzrMLt9dui5SOzQg47_3SWMprctgNVizI8aAumhEALw_wcB">Coderhouse.com</a>
+        </div>
+    </footer>
+    <!--FIN FOOTER-->
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/Javascript/carrito.js"></script>
+</body>
+
+</html>
