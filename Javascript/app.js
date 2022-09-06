@@ -1,5 +1,10 @@
-import { productos, copiaProductos } from './catalogo.js';
 
+fetch('/catalogo.json')
+async function fun() {
+    return fetch('/json/catalogo.json').then(res => res.json());
+  }
+const productos  = await fun();
+console.log(productos)
 
 //HTML DE LOS PRODUCTOS DEL CATALAGO 
 
@@ -139,6 +144,4 @@ for (const { nombre = 'nombre', precio = 'precio' } of productos) {
 // SE APLICA OPERADOR TERNARIO 
 carrito != "" ? console.log(carrito) : console.log("el carrito esta vacio");
 
-// SE MUESTRA UNA COPIA DE LOS PRODUCTOS USANDO SPREAD 
-console.log("copiaProductos");
-console.log(copiaProductos);
+
